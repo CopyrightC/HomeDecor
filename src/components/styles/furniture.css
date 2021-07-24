@@ -1,26 +1,60 @@
 .furniture{
+    display: flex;
+    position: relative;
     background-color: rgb(233, 237, 240);
-    width: 30rem;
-    height: 39rem;
-    align-self: center;
-    justify-self: center;
-    border-radius: 0 3rem ;
+    width: 100vw;
+    height: 25rem;
+    
 }
+
 .furniture:hover{
-    box-shadow:1rem 1rem 1rem rgb(111, 105, 167);
+    box-shadow:1rem 1rem 1rem rgb(108, 107, 119);
+}
+
+.furniture p{
+    margin-top: 11rem;
+    font-size: 1.6rem;
+    position: absolute;
+    align-self: center;
+    margin-left: 29rem;
+    margin-right: 2rem;
+}
+.shop{
+    position: absolute;
+    right: 2rem;
+    margin-top: 2rem;
+    height: 6rem;
+    width: 20rem;
+    border-radius: 0 0.8rem;
+}
+.shop:hover{
+    background-color: rgb(114, 177, 31);
+    color: white;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
 }
 .furniture img{
-    width: 100%;
-    height: 75%;
+
+    width: 27rem;
+    height: 100%;
 }
 
 .furniture h2{
+
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: 10;
+    margin-left: -1rem;
 }
 
 .furniture h4{
+
+    margin-top: 0.5rem;
+    font-weight: 500;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
