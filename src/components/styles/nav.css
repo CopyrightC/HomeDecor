@@ -1,0 +1,26 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 7rem;
+    background-color: rgb(26, 24, 24);
+}
+
+nav li{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 2rem;
+}
+
+nav div{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    transition-duration: 350ms;
+    transition-timing-function: ease-out ;
+}
+nav div:hover{
+    background-color: rgb(50, 16, 146);
+}

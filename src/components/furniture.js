@@ -2,7 +2,9 @@ import React from 'react'
 import "./styles/furniture.css"
 export const Furniture = (props) => {
     return (
+
         <div className="furniture">
+
             <img src={props.img} alt="" />
 
             <div className="info">
@@ -10,7 +12,6 @@ export const Furniture = (props) => {
                 <h4>{props.price}</h4>
                 <p>{props.detail}</p>
             </div>
-
 
             <button className="shop">Add to cart</button>
 

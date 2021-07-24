@@ -20,6 +20,7 @@
     margin-left: 29rem;
     margin-right: 2rem;
 }
+
 .shop{
     position: absolute;
     right: 4rem;
@@ -28,10 +29,12 @@
     width: 20rem;
     border-radius: 0 0.8rem;
 }
+
 .shop:hover{
     background-color: rgb(114, 177, 31);
     color: white;
 }
+
 .info{
     display: flex;
     flex-direction: column;
@@ -46,7 +49,7 @@
 .furniture h2{
 
     text-align: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Dosis', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.2rem;
     font-weight: 10;
 }
