@@ -4,11 +4,12 @@
     background-color: rgb(233, 237, 240);
     width: 100vw;
     height: 25rem;
+    margin: 0.3rem;
     
 }
 
 .furniture:hover{
-    box-shadow:1rem 1rem 1rem rgb(108, 107, 119);
+    background-color: rgb(207, 210, 212);
 }
 
 .furniture p{
@@ -21,7 +22,7 @@
 }
 .shop{
     position: absolute;
-    right: 2rem;
+    right: 4rem;
     margin-top: 2rem;
     height: 6rem;
     width: 20rem;
@@ -44,11 +45,10 @@
 
 .furniture h2{
 
-    text-align: center;
+    text-align: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.2rem;
     font-weight: 10;
-    margin-left: -1rem;
 }
 
 .furniture h4{
@@ -56,5 +56,6 @@
     margin-top: 0.5rem;
     font-weight: 500;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    text-align: left;
 }
