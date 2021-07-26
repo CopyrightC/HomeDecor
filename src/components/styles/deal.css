@@ -1,0 +1,9 @@
+.deal{
+    background-color: rgb(224, 235, 236);
+    width: 40rem;
+    height: 40rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

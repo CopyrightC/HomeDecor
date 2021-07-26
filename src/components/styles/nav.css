@@ -23,4 +23,5 @@ nav div{
 }
 nav div:hover{
     background-color: rgb(50, 16, 146);
+    cursor: pointer;
 }
