@@ -2,6 +2,7 @@ import React from 'react'
 import "./styles/home.css"
 import { Deal } from "./deal"
 import { Reviews } from "./reviews"
+
 export const Home = () => {
     return (
         <div className="home-div">

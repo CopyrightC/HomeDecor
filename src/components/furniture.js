@@ -1,6 +1,17 @@
 import React from 'react'
 import "./styles/furniture.css"
 
+// object structure -
+// {
+//     1 : {
+//         name : {},
+//         price : {},
+//         pic : {}
+//     },
+
+//     2 : ...
+// }
+
 export const Furniture = (props) => {
 
     return (
@@ -14,7 +25,7 @@ export const Furniture = (props) => {
                 <p>{props.detail}</p>
             </div>
 
-            <button className="shop">Add to cart</button>
+            <button className="shop" onClick={() => props.func(props.name, props.price, props.img)}>Add to cart</button>
 
         </div >
     )

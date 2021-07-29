@@ -1,8 +1,8 @@
 import React from 'react'
 import { Furniture } from "./furniture"
-import { Cart } from "./cart"
+import { Detail } from "./detail"
 
-export const Shop = () => {
+export const Shop = (props) => {
 
     const [bool, setBool] = React.useState(false);
 
@@ -10,7 +10,7 @@ export const Shop = () => {
         //bool
         bool ?
             <>
-                <Cart></Cart>
+                <Detail />
             </>
             :
             <div className="main">
@@ -21,7 +21,8 @@ export const Shop = () => {
          Eveniet atque minima eligendi porro. Sapiente corrupti ratione iure expedita, 
          inventore ad id est at tenetur asperiores sed. Dolore accusantium, ipsum dolor 
          doloremque odio saepe at libero mollitia? Cupiditate?"
-                    xyz={bool => setBool(bool)} />
+                    xyz={bool => setBool(bool)}
+                    func={props.func} />
 
                 <Furniture img="https://images-na.ssl-images-amazon.com/images/I/61o2dXPWi3L._AC_SL1200_.jpg"
                     name="Office Chair"
@@ -30,7 +31,8 @@ export const Shop = () => {
          Eveniet atque minima eligendi porro. Sapiente corrupti ratione iure expedita, 
          inventore ad id est at tenetur asperiores sed. Dolore accusantium, ipsum dolor 
          doloremque odio saepe at libero mollitia? Cupiditate?"
-                    xyz={bool => setBool(bool)} />
+                    xyz={bool => setBool(bool)}
+                    func={props.func} />
 
                 <Furniture img="https://images-na.ssl-images-amazon.com/images/I/71wC7OKtS2L._AC_SL1500_.jpg"
                     name="Shoe rack"
@@ -39,7 +41,8 @@ export const Shop = () => {
          Eveniet atque minima eligendi porro. Sapiente corrupti ratione iure expedita, 
          inventore ad id est at tenetur asperiores sed. Dolore accusantium, ipsum dolor 
          doloremque odio saepe at libero mollitia? Cupiditate?"
-                    xyz={bool => setBool(bool)} />
+                    xyz={bool => setBool(bool)}
+                    func={props.func} />
 
                 <Furniture img="https://images-na.ssl-images-amazon.com/images/I/81lGjABXq%2BS._AC_SL1500_.jpg"
                     name="Dresser"
@@ -48,7 +51,8 @@ export const Shop = () => {
          Eveniet atque minima eligendi porro. Sapiente corrupti ratione iure expedita, 
          inventore ad id est at tenetur asperiores sed. Dolore accusantium, ipsum dolor 
          doloremque odio saepe at libero mollitia? Cupiditate?"
-                    xyz={bool => setBool(bool)} />
+                    xyz={bool => setBool(bool)}
+                    func={props.func} />
 
                 <Furniture img="https://images-na.ssl-images-amazon.com/images/I/61mmhQcG0sS._AC_SL1500_.jpg"
                     name="Picture Frame"
@@ -57,7 +61,8 @@ export const Shop = () => {
          Eveniet atque minima eligendi porro. Sapiente corrupti ratione iure expedita, 
          inventore ad id est at tenetur asperiores sed. Dolore accusantium, ipsum dolor 
          doloremque odio saepe at libero mollitia? Cupiditate?"
-                    xyz={bool => setBool(bool)} />
+                    xyz={bool => setBool(bool)}
+                    func={props.func} />
 
                 <Furniture img="https://m.media-amazon.com/images/I/91HUri7OB0L._AC_SL1500_.jpg"
                     name="Armchair"
@@ -66,7 +71,8 @@ export const Shop = () => {
          Eveniet atque minima eligendi porro. Sapiente corrupti ratione iure expedita, 
          inventore ad id est at tenetur asperiores sed. Dolore accusantium, ipsum dolor 
          doloremque odio saepe at libero mollitia? Cupiditate?"
-                    xyz={bool => setBool(bool)} />
+                    xyz={bool => setBool(bool)}
+                    func={props.func} />
 
                 <Furniture img="https://images-na.ssl-images-amazon.com/images/I/61-nYtfzswL._AC_SL1000_.jpg"
                     name="Vanity Table"
@@ -75,7 +81,8 @@ export const Shop = () => {
          Eveniet atque minima eligendi porro. Sapiente corrupti ratione iure expedita, 
          inventore ad id est at tenetur asperiores sed. Dolore accusantium, ipsum dolor 
          doloremque odio saepe at libero mollitia? Cupiditate?"
-                    xyz={bool => setBool(bool)} />
+                    xyz={bool => setBool(bool)}
+                    func={props.func} />
 
             </div>
 
