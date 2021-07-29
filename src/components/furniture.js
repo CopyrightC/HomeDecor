@@ -1,9 +1,10 @@
 import React from 'react'
 import "./styles/furniture.css"
-export const Furniture = (props) => {
-    return (
 
-        <div className="furniture">
+export const Furniture = (props) => {
+
+    return (
+        <div className="furniture" onClick={() => props.xyz(true)}>
 
             <img src={props.img} alt="" />
 
@@ -15,6 +16,7 @@ export const Furniture = (props) => {
 
             <button className="shop">Add to cart</button>
 
-        </div>
+        </div >
     )
+
 }

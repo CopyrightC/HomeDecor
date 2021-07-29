@@ -25,7 +25,7 @@ export const Home = () => {
                     cross="$252" price="$199" name="Two Frogs in a Boat Faberge Styled Trinket Box" />
 
             </div>
-            <p id="rev" className="p">Customer reviews</p>
+            <p id="rev" className="p">Customers feedback</p>
             <Reviews />
             <footer>
                 Copyright © All rights reserved.
