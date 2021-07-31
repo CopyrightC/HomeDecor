@@ -13,9 +13,13 @@ import "./styles/furniture.css"
 // }
 
 export const Furniture = (props) => {
-
+    let ifClicked = false;
     return (
-        <div className="furniture" onClick={() => props.xyz(true)}>
+        <div className="furniture" onClick={() => {
+            if (!ifClicked) {
+                props.xyz(true)
+            }
+        }}>
 
             <img src={props.img} alt="" />
 
@@ -25,7 +29,11 @@ export const Furniture = (props) => {
                 <p>{props.detail}</p>
             </div>
 
-            <button className="shop" onClick={() => props.func(props.name, props.price, props.img)}>Add to cart</button>
+            <button className="shop" onClick={() => {
+                ifClicked = true;
+                props.func(props.name, props.price, props.img)
+                ifClicked = false;
+            }}>Add to cart</button>
 
         </div >
     )

@@ -24,11 +24,21 @@ function App() {
 
   const [obj, setObj] = React.useState(initialJson);
 
-  if (bool) {
+  const callIfbool = () => {
     index = parseInt(Object.keys(obj[obj.length - 1])) + 1;
     bool = false;
   }
 
+  //Debugging - remove this !! - bug-1 
+  try {
+    if (bool) {
+      callIfbool();
+    }
+  }
+
+  catch {
+    console.log("this is ", obj)
+  }
   React.useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(obj))
   }, [obj])
