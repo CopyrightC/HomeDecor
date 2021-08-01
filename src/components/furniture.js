@@ -20,7 +20,6 @@ export const Furniture = (props) => {
                 props.xyz(true)
             }
         }}>
-
             <img src={props.img} alt="" />
 
             <div className="info">
@@ -29,12 +28,22 @@ export const Furniture = (props) => {
                 <p>{props.detail}</p>
             </div>
 
-            <button className="shop" onClick={() => {
-                ifClicked = true;
-                props.func(props.name, props.price, props.img)
-                ifClicked = false;
-            }}>Add to cart</button>
+            {props.cartItem ?
 
+                <button className="shop" onClick={() => {
+                    ifClicked = true;
+                    props.func(props.name, props.price, props.img)
+                    ifClicked = false;
+                }}>Remove</button>
+
+                :
+
+                <button className="shop" onClick={() => {
+                    ifClicked = true;
+                    props.func(props.name, props.price, props.img)
+                    ifClicked = false;
+                }}>Add to cart</button>
+            }
         </div >
     )
 

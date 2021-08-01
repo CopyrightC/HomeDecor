@@ -14,7 +14,9 @@
     margin: 5rem;
 }
 
-
+#header{
+    margin-bottom: 5rem;
+}
 #remove{
     background-color: rgb(177, 74, 50);
     border-radius: 0 1rem 1rem 0;

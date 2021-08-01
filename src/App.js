@@ -44,7 +44,9 @@ function App() {
   }, [obj])
 
   const addItemToCart = (name, price, img) => {
-
+    if (isNaN(index)) {
+      index = 0;
+    }
     const itemData = {
       [index]: {
         "Name": name,
@@ -53,8 +55,32 @@ function App() {
       }
     }
     setObj([...obj, itemData])
+
   }
 
+
+  /*
+  Object structure - 
+  Object = {
+    index : {
+      Name,
+      Price,
+      Img
+    }
+  }
+
+  let x = Object.keys(obj)
+  x = ["Index" , ...]
+  x.forEach((i)=>{
+    return(
+      <div>
+        obj[i].name
+        obj[i].price
+        obj[i].img
+      </div>
+    )
+  })
+  */
   return (
 
     <Router>
