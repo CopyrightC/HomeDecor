@@ -14,30 +14,28 @@ function App() {
   let index;
   let bool = false;
   if (localStorage.getItem("cartItems") === null) {
-    initialJson = []
+    initialJson = {}
     index = 0;
   }
+
   else {
     initialJson = JSON.parse(localStorage.getItem("cartItems"));
+    console.log(initialJson)
     bool = true;
   }
 
   const [obj, setObj] = React.useState(initialJson);
 
   const callIfbool = () => {
-    index = parseInt(Object.keys(obj[obj.length - 1])) + 1;
+    index = parseInt(Object.keys(initialJson[initialJson.length - 1])) + 1;
     bool = false;
   }
 
+  let copyObj = JSON.parse(JSON.stringify(obj))
   //Debugging - remove this !! - bug-1 
-  try {
-    if (bool) {
-      callIfbool();
-    }
-  }
 
-  catch {
-    console.log("this is ", obj)
+  if (bool) {
+    callIfbool();
   }
   React.useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(obj))
@@ -45,7 +43,11 @@ function App() {
 
   const addItemToCart = (name, price, img) => {
     if (isNaN(index)) {
+      console.log("NaN")
       index = 0;
+    }
+    else {
+      console.log(index)
     }
     const itemData = {
       [index]: {
@@ -54,33 +56,9 @@ function App() {
         "Img": img
       }
     }
-    setObj([...obj, itemData])
-
+    copyObj[index] = itemData[index];
+    setObj(copyObj);
   }
-
-
-  /*
-  Object structure - 
-  Object = {
-    index : {
-      Name,
-      Price,
-      Img
-    }
-  }
-
-  let x = Object.keys(obj)
-  x = ["Index" , ...]
-  x.forEach((i)=>{
-    return(
-      <div>
-        obj[i].name
-        obj[i].price
-        obj[i].img
-      </div>
-    )
-  })
-  */
   return (
 
     <Router>
@@ -104,6 +82,31 @@ function App() {
     </Router>
 
   );
+
 }
+
+
+/*
+Object structure - 
+Object = {
+  index : {
+    Name,
+    Price,
+    Img
+  }
+}
+ 
+let x = Object.keys(obj)
+x = ["Index" , ...]
+x.forEach((i)=>{
+  return(
+    <div>
+      obj[i].name
+      obj[i].price
+      obj[i].img
+    </div>
+  )
+})
+*/
 
 export default App;

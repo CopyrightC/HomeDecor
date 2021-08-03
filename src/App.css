@@ -11,6 +11,7 @@ html{
   height: 100vh;
   flex-direction: column;
 }
+
 .p{
   display: flex;
   justify-content: center;

@@ -2,7 +2,7 @@
     display: flex;
     position: relative;
     background-color: rgb(233, 237, 240);
-    width: 100vw;
+    width: 99.5vw;
     height: 25rem;
     margin: 0.3rem;
     
@@ -40,15 +40,19 @@
     flex-direction: column;
     margin-left: 2rem;
 }
-    
+
 .furniture img{
 
     width: 27rem;
     height: 100%;
 }
 
+.info .para{
+    position: absolute;
+    margin-top: 8rem;
+}
 .furniture h2{
-
+    margin-top: 2rem;
     text-align: left;
     font-family: 'Dosis', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.2rem;
@@ -56,7 +60,7 @@
 }
 
 .furniture h4{
-
+    
     margin-top: 0.5rem;
     font-weight: 500;
     text-align: center;

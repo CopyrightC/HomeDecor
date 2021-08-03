@@ -25,25 +25,18 @@ export const Furniture = (props) => {
             <div className="info">
                 <h2>{props.name}</h2>
                 <h4>{props.price}</h4>
-                <p>{props.detail}</p>
+                <p className="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eveniet atque minima eligendi porro. Sapiente corrupti ratione iure expedita,
+                    inventore ad id est at tenetur asperiores sed. Dolore accusantium, ipsum dolor
+                    doloremque odio saepe at libero mollitia? Cupiditate?</p>
             </div>
 
-            {props.cartItem ?
+            <button className="shop" onClick={() => {
+                ifClicked = true;
+                props.func(props.name, props.price, props.img)
+                ifClicked = false;
+            }}>Add to cart</button>
 
-                <button className="shop" onClick={() => {
-                    ifClicked = true;
-                    props.func(props.name, props.price, props.img)
-                    ifClicked = false;
-                }}>Remove</button>
-
-                :
-
-                <button className="shop" onClick={() => {
-                    ifClicked = true;
-                    props.func(props.name, props.price, props.img)
-                    ifClicked = false;
-                }}>Add to cart</button>
-            }
         </div >
     )
 
