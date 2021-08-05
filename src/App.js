@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef, useLayoutEffect } from "react"
 import './App.css';
 import { Shop } from "./components/shop"
 import { Nav } from "./components/nav"
@@ -10,55 +10,43 @@ import {
 
 
 function App() {
-  let initialJson;
-  let index;
-  let bool = false;
-  if (localStorage.getItem("cartItems") === null) {
-    initialJson = {}
-    index = 0;
+  let initJson;
+  if (localStorage.getItem("cart") === null) {
+    initJson = [];
   }
-
   else {
-    initialJson = JSON.parse(localStorage.getItem("cartItems"));
-    console.log(initialJson)
-    bool = true;
+    initJson = JSON.parse(localStorage.getItem("cart"));
   }
 
-  const [obj, setObj] = React.useState(initialJson);
+  const deleteItem = () => {
 
-  const callIfbool = () => {
-    index = parseInt(Object.keys(initialJson[initialJson.length - 1])) + 1;
-    bool = false;
   }
-
-  let copyObj = JSON.parse(JSON.stringify(obj))
-  //Debugging - remove this !! - bug-1 
-
-  if (bool) {
-    callIfbool();
-  }
-  React.useEffect(() => {
-    localStorage.setItem("cartItems", JSON.stringify(obj))
-  }, [obj])
 
   const addItemToCart = (name, price, img) => {
-    if (isNaN(index)) {
-      console.log("NaN")
+    // console.log(name, price, img)
+    let index;
+    if (cart.length === 0) {
       index = 0;
     }
     else {
-      console.log(index)
+      index = cart[cart.length - 1].index + 1;
     }
-    const itemData = {
-      [index]: {
-        "Name": name,
-        "Price": price,
-        "Img": img
-      }
+
+    const detail = {
+      index: index,
+      Name: name,
+      Price: price,
+      Img: img
     }
-    copyObj[index] = itemData[index];
-    setObj(copyObj);
+
+    setCart([...cart, detail])
   }
+
+  const [cart, setCart] = React.useState(initJson)
+  React.useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart))
+  }, [cart])
+
   return (
 
     <Router>
@@ -82,8 +70,9 @@ function App() {
     </Router>
 
   );
-
 }
+
+
 
 
 /*
@@ -110,3 +99,54 @@ x.forEach((i)=>{
 */
 
 export default App;
+
+
+/*
+  let initialJson;
+  let index;
+  console.log(localStorage.getItem("cartItems"), "pog")
+  if (localStorage.getItem("cartItems") == null || {}) {
+    console.log("null")
+    initialJson = {}
+    index = 0;
+  }
+
+  else {
+
+    initialJson = JSON.parse(localStorage.getItem("cartItems"));
+    // console.log(initialJson)
+    index = parseInt(Object.keys(initialJson[initialJson.length - 1])) + 1;
+
+  }
+
+  const [obj, setObj] = React.useState(initialJson);
+
+  let copyObj = JSON.parse(JSON.stringify(obj))
+  // console.log(index)
+  // React.useEffect(() => {
+
+  // }, [obj])
+
+  const addItemToCart = (name, price, img) => {
+    console.log("func called")
+    if (isNaN(index)) {
+      console.log("NaN")
+      index = 0;
+    }
+    else {
+      index = parseInt(Object.keys(obj[obj.length - 1])) + 1;
+    }
+    console.log("func index = ", index)
+    const itemData = {
+      [index]: {
+        "Name": name,
+        "Price": price,
+        "Img": img
+      }
+    }
+    copyObj[index] = itemData[index];
+    console.log("this is copy", copyObj)
+    setObj(copyObj);
+    console.log(obj)
+    localStorage.setItem("cartItems", JSON.stringify(obj))
+    */

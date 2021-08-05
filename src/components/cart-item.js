@@ -16,7 +16,7 @@ export const CartItemx = (props) => {
             </div>
             <button className="shop" onClick={() => {
                 ifClicked = true;
-                props.remove(props.index)
+
                 console.log("done")
                 ifClicked = false;
             }}>Remove</button>
