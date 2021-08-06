@@ -3,7 +3,51 @@
     flex-direction: column;
     align-items: center;
 }
+#empty{
+    background-color: rgba(146, 154, 160, 0.335);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#empty::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(211, 197, 197);
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100% );
+    transition: all 0.2s;
+    z-index: -1;
+}
+#proceed{
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.7rem;
+    position: absolute;
+    margin-top: 5rem;
+    right: 2rem;
+    z-index: 1;
+    overflow: hidden;
+}
 
+#proceed::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-100%);
+    background-color: rgb(90, 75, 75);
+    z-index: -1;
+    transition: cubic-bezier(0.23, 1, 0.320, 1) 200ms;
+}
+#proceed:hover:before{
+    transform: translateX(0);
+}
+#empty:hover:before{
+    transform: translateX(0);
+}
 .cart-item{
     display: flex;
     width: 40rem;

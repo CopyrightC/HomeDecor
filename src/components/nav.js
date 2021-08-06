@@ -3,14 +3,21 @@ import "./styles/nav.css"
 export const Nav = () => {
     return (
         <nav>
+            <p id="title">HomeDecor</p>
             <div className="nav-item">
-                <li>Home</li>
+                <a href="/">
+                    <li>Home</li>
+                </a>
             </div>
             <div className="nav-item">
-                <li>Shop</li>
+                <a href="/shop">
+                    <li>Shop</li>
+                </a>
             </div>
             <div className="nav-item">
-                <li>About</li>
+                <a href="/cart">
+                    <li>Cart</li>
+                </a>
             </div>
 
         </nav>

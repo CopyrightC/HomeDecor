@@ -1,0 +1,84 @@
+.checkout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.input{
+    width: 40rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    border:none;
+    text-align: center;
+    position: relative;
+    resize: none;
+    font-size: 1.5rem;
+}
+.h2{
+    margin-top: 5rem;
+    display: inline;
+    position: relative;
+    right: 17.5rem;
+    margin-bottom: 2rem;
+}
+.order{
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.7rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 3rem;
+    z-index: 1;
+    overflow: hidden;
+}
+.order::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-100%);
+    background-color: rgb(90, 75, 75);
+    z-index: -1;
+    transition: cubic-bezier(0.23, 1, 0.320, 1) 200ms;
+}
+.order:hover:before{
+    transform: translateX(0);
+}
+#add{
+    height: 10rem;
+    margin-bottom: 10rem;
+}
+.contact{
+    margin-top: 2rem;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+#lbl{
+    margin-top: 5rem;
+    font-size: 2rem;
+    margin-right: 5rem;
+}
+.drop{
+    width: 30rem;
+    font-size: 1.5rem;
+    height: 5rem;
+}
+.dropdown-item{
+    font-size: 1.8rem;
+}
+.enlarge{
+    font-size: 2rem;
+}
+#select{
+    width: 20rem;
+    height: 4rem;
+    font-size: 2rem;
+}

@@ -16,6 +16,7 @@ export const Furniture = (props) => {
     let ifClicked = false;
     return (
         <div className="furniture" onClick={() => {
+            console.log("dvi")
             if (!ifClicked) {
                 props.xyz(true)
             }
@@ -34,7 +35,6 @@ export const Furniture = (props) => {
             <button className="shop" onClick={() => {
                 ifClicked = true;
                 props.func(props.name, props.price, props.img)
-                ifClicked = false;
             }}>Add to cart</button>
 
         </div >

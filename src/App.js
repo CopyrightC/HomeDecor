@@ -4,12 +4,14 @@ import { Shop } from "./components/shop"
 import { Nav } from "./components/nav"
 import { Home } from "./components/home"
 import { Cart } from "./components/cart"
+import { Checkout } from "./components/checkout"
 import {
   BrowserRouter as Router, Switch, Route
 } from "react-router-dom";
 
 
 function App() {
+  console.log("rendered")
   let initJson;
   if (localStorage.getItem("cart") === null) {
     initJson = [];
@@ -22,7 +24,6 @@ function App() {
     setCart(cart.filter((x) => {
       return JSON.stringify(x) !== JSON.stringify(item)
     }))
-    console.log("Called el")
   }
 
   const addItemToCart = (name, price, img) => {
@@ -47,6 +48,7 @@ function App() {
 
   const [cart, setCart] = React.useState(initJson)
   React.useEffect(() => {
+    console.log("effect")
     localStorage.setItem("cart", JSON.stringify(cart))
   }, [cart])
 
@@ -68,6 +70,9 @@ function App() {
         </Route>
         <Route exact path="/cart">
           <Cart del={deleteItem} />
+        </Route>
+        <Route exact path="/checkout">
+          <Checkout />
         </Route>
       </Switch>
     </Router>

@@ -5,30 +5,43 @@ import { CartItemx } from './cart-item';
 
 export const Cart = (props) => {
 
-
     let dict = JSON.parse(localStorage.getItem("cart"));
-    if (dict.length !== 0) {
-        return (
+    try {
+        if (dict.length !== 0) {
+            return (
 
-            < div className="parent" >
-                <div className="cart-page">
-                    <p className="p" id="header">Cart</p>
-                    {dict.map((elem) => {
-                        return <CartItemx name={elem.Name} key={elem.index} price={elem.Price}
-                            img={elem.Img} index={elem} del={props.del} obj={elem} />
-                    })}
-                </div>
-            </div >
+                < div className="parent" >
+                    <div className="cart-page">
+                        <p className="p" id="header">Cart</p>
+                        {dict.map((elem) => {
+                            return <CartItemx name={elem.Name} key={elem.index} price={elem.Price}
+                                img={elem.Img} index={elem} del={props.del} obj={elem} />
+                        })}
+                    </div>
+                    <a href="/checkout">
+                        <button className="btn btn-primary" id="proceed">Proceed to checkout</button>
+                    </a>
+                </div >
 
-        )
+            )
+        }
+
+        else {
+            return (
+                < div className="parent" >
+                    <div className="cart-page">
+                        <p className="p" id="header">Cart</p>
+                        <p className="p" id="empty">Cart Empty!</p>
+                    </div>
+                </div >)
+        }
     }
-
-    else {
+    catch {
         return (
             < div className="parent" >
                 <div className="cart-page">
                     <p className="p" id="header">Cart</p>
-                    OK
+                    <p className="p" id="empty">Cart Empty!</p>
                 </div>
             </div >)
     }
