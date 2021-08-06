@@ -1,6 +1,6 @@
 import React from 'react'
 export const CartItemx = (props) => {
-    let ifClicked = false;
+
     return (
 
         <div className="furniture" >
@@ -14,12 +14,9 @@ export const CartItemx = (props) => {
                     inventore ad id est at tenetur asperiores sed. Dolore accusantium, ipsum dolor
                     doloremque odio saepe at libero mollitia? Cupiditate?</p>
             </div>
-            <button className="shop" onClick={() => {
-                ifClicked = true;
-
-                console.log("done")
-                ifClicked = false;
-            }}>Remove</button>
+            <button className="shop" onClick={() =>
+                props.del(props.obj)}>
+                Remove</button>
         </div>
     )
 }

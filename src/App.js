@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect } from "react"
+import React from "react"
 import './App.css';
 import { Shop } from "./components/shop"
 import { Nav } from "./components/nav"
@@ -18,8 +18,11 @@ function App() {
     initJson = JSON.parse(localStorage.getItem("cart"));
   }
 
-  const deleteItem = () => {
-
+  const deleteItem = (item) => {
+    setCart(cart.filter((x) => {
+      return JSON.stringify(x) !== JSON.stringify(item)
+    }))
+    console.log("Called el")
   }
 
   const addItemToCart = (name, price, img) => {
@@ -64,7 +67,7 @@ function App() {
           </div>
         </Route>
         <Route exact path="/cart">
-          <Cart />
+          <Cart del={deleteItem} />
         </Route>
       </Switch>
     </Router>
