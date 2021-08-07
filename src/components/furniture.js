@@ -32,7 +32,7 @@ export const Furniture = (props) => {
                     doloremque odio saepe at libero mollitia? Cupiditate?</p>
             </div>
 
-            <button className="shop" onClick={() => {
+            <button className="btn btn-primary shop" onClick={() => {
                 ifClicked = true;
                 props.func(props.name, props.price, props.img)
             }}>Add to cart</button>

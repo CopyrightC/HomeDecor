@@ -61,21 +61,7 @@
 #header{
     margin-bottom: 5rem;
 }
-#remove{
-    background-color: rgb(177, 74, 50);
-    border-radius: 0 1rem 1rem 0;
-    margin-top: 2rem;
-    width: 40%;
-    height:4rem;
-    color: rgb(226, 225, 225);
-    align-self: center;
-}
 
-#remove:hover{
-    cursor: pointer;
-    background-color: rgb(64, 219, 43);
-    color: black;
-}
 .cart-item h4{
     text-align: center;
 }

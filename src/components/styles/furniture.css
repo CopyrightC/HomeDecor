@@ -24,17 +24,33 @@
 .shop{
     position: absolute;
     right: 4rem;
+    font-size: 1.5rem;
     margin-top: 2rem;
     height: 6rem;
     width: 20rem;
+    overflow: hidden;
+    z-index: 1;
     border-radius: 0 0.8rem;
 }
 
+.shop::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-color: rgb(78, 77, 82);
+    height: 100%;
+    width: 100%;
+    transition: 200ms linear;
+}
+.shop:hover:before{
+    transform: translateX(0);
+}
 .shop:hover{
-    background-color: rgb(114, 177, 31);
     color: white;
 }
-
 .info{
     display: flex;
     flex-direction: column;

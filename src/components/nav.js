@@ -4,22 +4,21 @@ export const Nav = () => {
     return (
         <nav>
             <p id="title">HomeDecor</p>
-            <div className="nav-item">
-                <a href="/">
+            <a href="/">
+                <div className="nav-item">
                     <li>Home</li>
-                </a>
-            </div>
-            <div className="nav-item">
-                <a href="/shop">
+                </div>
+            </a>
+            <a href="/shop">
+                <div className="nav-item">
                     <li>Shop</li>
-                </a>
-            </div>
-            <div className="nav-item">
-                <a href="/cart">
+                </div>
+            </a>
+            <a href="/cart">
+                <div className="nav-item">
                     <li>Cart</li>
-                </a>
-            </div>
-
+                </div>
+            </a>
         </nav>
     )
 }

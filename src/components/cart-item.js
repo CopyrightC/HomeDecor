@@ -14,7 +14,7 @@ export const CartItemx = (props) => {
                     inventore ad id est at tenetur asperiores sed. Dolore accusantium, ipsum dolor
                     doloremque odio saepe at libero mollitia? Cupiditate?</p>
             </div>
-            <button className="shop" onClick={() =>
+            <button className="btn btn-warning shop" onClick={() =>
                 props.del(props.obj)}>
                 Remove</button>
         </div>

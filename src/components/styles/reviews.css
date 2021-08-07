@@ -1,50 +1,37 @@
-.reviews{
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-}
-.r-row{
-    display:flex;
-    flex-direction: column;
-}
 .para-rev{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    font-size: 2.5rem;
-    margin :0rem 5rem
+    font-size: 2rem;
+    padding: 2rem;
 }
-
 blockquote{
     position: relative;
-    padding: 2rem;
+    padding: 5rem;
 }
 
 blockquote::before{
     position: absolute;
     content: '"';
     display: inline;
-    font-size: 5.5rem;
+    top: 1.5rem;
+    left: 2.5rem;
+    font-size: 6.5rem;
 }
 
 blockquote .author{
     font-weight: 400;
     font-size: 2rem;
     position:absolute;
-    right: 7rem;
-    bottom: 2rem;
+    right: 3rem;
+    bottom: 1rem;
 }
 .review{
     display: flex;
     border-radius: 2rem;
-    border-radius: 2rem;
-    width: 30vw;
-    height: 30vh;
+    width: 45rem;
+    height: 40rem;
     background-color: rgb(224, 235, 236);
     margin-top: 8rem;
     margin-left: 5rem;
+   
 }
 
 .review:hover{
