@@ -18,6 +18,8 @@ export const Furniture = (props) => {
         <div className="furniture" onClick={() => {
             console.log("dvi")
             if (!ifClicked) {
+                props.nameFunc(props.name)
+                props.imgFunc(props.img)
                 props.xyz(true)
             }
         }}>

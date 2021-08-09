@@ -1,5 +1,6 @@
 html{
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 *{
   margin: 0;
@@ -13,10 +14,10 @@ html{
 }
 
 .p{
+  font-family: 'Shadows Into Light', cursive;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
   font-size: 2.5rem;
   margin-top:5rem;

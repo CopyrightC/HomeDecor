@@ -4,16 +4,71 @@ footer{
     justify-content: center;
     font-size: 1.8rem;
     color: rgb(251, 209, 209);
-    width: 100vw;
+    width: 98.8vw;
+    position: relative;
+    right: 0.9rem;
     height: 10rem;
     margin-top: 10rem;
     background-color: rgb(65, 61, 61);
+}
+
+#header2{
+    position: absolute;
+    left: 2rem;
+    top: 6rem;
+    font-family: 'Shadows Into Light', cursive;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgb(209, 213, 218);
+}
+#header2 h2{
+    font-size: 5rem;
+}
+#shopnow{
+    font-size: 1.7rem;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    width: 20rem;
+    margin-top: 2rem;
+    height: 5rem;
+}
+#shopnow::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-100%);
+    background-color: rgb(90, 75, 75);
+    z-index: -1;
+    transition: cubic-bezier(0.23, 1, 0.320, 1) 200ms;
+}
+#shopnow:hover:before{
+    transform: translateX(0);
+}
+#slog{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 4rem;
+}
+.homemain{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 99.8vw;
 }
 .home-div{
     min-height: 100.83vh;
     display: flex;
     height: 100%;
-    width: 100vw;
+    width: 99.8vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
