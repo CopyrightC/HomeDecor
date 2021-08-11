@@ -19,6 +19,8 @@ export const Nav = () => {
                     <li>Cart</li>
                 </div>
             </a>
+
+            <button id="btnx">Contact</button>
         </nav>
     )
 }

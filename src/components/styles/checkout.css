@@ -7,6 +7,25 @@
     height: 93.8vh;
 }
 
+.paid{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3rem;
+    background-image: url(https://images.unsplash.com/photo-1572195577046-2f25894c06fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1267&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.cont{
+    border-radius: 2rem;
+    padding: 5rem;
+    background-color: white;
+}
+
 .input{
     width: 40rem;
     height: 5rem;
