@@ -9,11 +9,9 @@ export const Shop = (props) => {
     const [img, setImg] = React.useState();
 
     return (
-        //bool
+
         bool ?
-            <>
-                <Detail name={name} img={img} />
-            </>
+            <Detail name={name} img={img} />
             :
             <div className="main">
                 <Furniture img="https://images-na.ssl-images-amazon.com/images/I/81K8cuT1QDL._AC_SL1500_.jpg"

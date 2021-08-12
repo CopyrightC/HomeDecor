@@ -1,11 +1,20 @@
 import React from 'react'
 import "./styles/checkout.css"
 
+const getAmount = () => {
+    let dict = JSON.parse(localStorage.getItem("cart"))
+    let price = 0;
+    dict.map((count) => {
+        price += parseFloat(count.Price.slice(1, count.Price.length - 1))
+    })
+    return price;
+}
+
 const PayementSuccess = () => {
     return (
         <div className="paid">
             <div className="cont">
-                Paid $1000 successfully !
+                Paid ${getAmount()} successfully !
                 <br />
                 Your order is on the way :)
             </div>

@@ -25,6 +25,7 @@ export const Furniture = (props) => {
 
             <button className="btn btn-primary shop" onClick={() => {
                 ifClicked = true;
+                alert("Added to cart!")
                 props.func(props.name, props.price, props.img)
             }}>Add to cart</button>
 

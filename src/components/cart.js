@@ -12,7 +12,9 @@ export const Cart = (props) => {
 
                 < div className="parent" >
                     <div className="cart-page">
-                        <p className="p" id="header">Cart</p>
+                        <div className="carttitle">
+                            <p className="p" id="header">Cart</p>
+                        </div>
                         {dict.map((elem) => {
                             return <CartItemx name={elem.Name} key={elem.index} price={elem.Price}
                                 img={elem.Img} index={elem} del={props.del} obj={elem} />
@@ -30,7 +32,9 @@ export const Cart = (props) => {
             return (
                 < div className="parent" >
                     <div className="cart-page">
-                        <p className="p" id="header">Cart</p>
+                        <div className="carttitle">
+                            <p className="p" id="header">Cart</p>
+                        </div>
                         <p className="p" id="empty">Cart Empty!</p>
                     </div>
                 </div >)
@@ -40,7 +44,9 @@ export const Cart = (props) => {
         return (
             < div className="parent" >
                 <div className="cart-page">
-                    <p className="p" id="header">Cart</p>
+                    <div className="carttitle">
+                        <p className="p" id="header">Cart</p>
+                    </div>
                     <p className="p" id="empty">Cart Empty!</p>
                 </div>
             </div >)

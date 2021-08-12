@@ -12,13 +12,12 @@ import {
 
 
 function App() {
-  console.log("rendered")
   let initJson;
-  if (localStorage.getItem("cart") === (null || "[]")) {
-    initJson = [];
+  if (localStorage.getItem("cart") === (null || "[]" || undefined)) {
+    initJson = []
   }
   else {
-    initJson = JSON.parse(localStorage.getItem("cart"));
+    initJson = JSON.parse(localStorage.getItem("cart"))
   }
 
   const deleteItem = (item) => {
