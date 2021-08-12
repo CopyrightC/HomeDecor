@@ -4,6 +4,7 @@ import { Shop } from "./components/shop"
 import { Nav } from "./components/nav"
 import { Home } from "./components/home"
 import { Cart } from "./components/cart"
+import { Contact } from "./components/contact";
 import { Checkout } from "./components/checkout"
 import {
   BrowserRouter as Router, Switch, Route
@@ -74,6 +75,9 @@ function App() {
         </Route>
         <Route exact path="/checkout">
           <Checkout />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
         </Route>
       </Switch>
     </Router>

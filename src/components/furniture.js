@@ -1,17 +1,6 @@
 import React from 'react'
 import "./styles/furniture.css"
 
-// object structure -
-// {
-//     1 : {
-//         name : {},
-//         price : {},
-//         pic : {}
-//     },
-
-//     2 : ...
-// }
-
 export const Furniture = (props) => {
     let ifClicked = false;
     return (

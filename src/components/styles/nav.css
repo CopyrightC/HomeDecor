@@ -18,17 +18,21 @@ nav{
 #btnx{
     position: absolute;
     right: 3rem;
+  
+}
+
+#btnx #cncbtn{
     font-size: 1.5rem;
     background-color: rgb(0,136,169);
     border-radius: 0.7rem;
     color: black;
     z-index: 1;
     width: 15rem;
+    position: relative;
     overflow: hidden;
     height: 4rem;
-}
-
-#btnx::before{
+}   
+#cncbtn::before{
     content: "";
     top: 0;
     left: 0;
@@ -41,7 +45,7 @@ nav{
     transition: cubic-bezier(0.23, 1, 0.320, 1) 200ms;
 }
 
-#btnx:hover:before{
+#cncbtn:hover:before{
     transform: translateX(0);
 }
 nav li{

@@ -1,26 +1,28 @@
 import React from 'react'
 import "./styles/nav.css"
+import { Link } from 'react-router-dom'
 export const Nav = () => {
     return (
         <nav>
             <p id="title">HomeDecor</p>
-            <a href="/">
+            <Link to="/">
                 <div className="nav-item">
                     <li>Home</li>
                 </div>
-            </a>
-            <a href="/shop">
+            </Link>
+            <Link to="/shop">
                 <div className="nav-item">
                     <li>Shop</li>
                 </div>
-            </a>
-            <a href="/cart">
+            </Link>
+            <Link to="/cart">
                 <div className="nav-item">
                     <li>Cart</li>
                 </div>
-            </a>
-
-            <button id="btnx">Contact</button>
+            </Link>
+            <Link to="/contact" id="btnx">
+                <button id="cncbtn">Contact</button>
+            </Link>
         </nav>
     )
 }
