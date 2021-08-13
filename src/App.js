@@ -10,7 +10,6 @@ import {
   BrowserRouter as Router, Switch, Route
 } from "react-router-dom";
 
-
 function App() {
   let initJson;
   if (localStorage.getItem("cart") === (null || "[]" || undefined)) {

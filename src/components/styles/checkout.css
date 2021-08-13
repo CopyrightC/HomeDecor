@@ -29,6 +29,7 @@
 .input{
     width: 40rem;
     height: 5rem;
+    border-color: black;
     border-radius: 0.5rem;
     outline: 0;
     border-width: 0 0 2px;
@@ -37,6 +38,9 @@
     position: relative;
     resize: none;
     font-size: 1.5rem;
+}
+.input:focus{
+    border-color: blue;
 }
 .h2{
     margin-top: 5rem;

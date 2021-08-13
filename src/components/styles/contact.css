@@ -13,7 +13,8 @@
 .contactpg{
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 93.8vh;
+    position: relative;
     background-image: url(https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1630&q=80);
     background-size: cover;
     background-position: center;
@@ -29,6 +30,7 @@
 
 .contactform{
     align-self: center;
+    bottom: 2rem;
     border-radius: 1.9rem;
     display: flex;
     width: 90rem;
@@ -37,13 +39,45 @@
     align-items: center;
     position: relative;
     background-color: blanchedalmond;
-    margin-bottom: 2rem;
 }
 .contactform form{
     display: flex;
     flex-direction: column;
 }
+#success{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 60rem;
+    font-family: 'Ropa Sans', sans-serif;   
+    height: 5rem;
+    background-color: rgb(187, 187, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tick{
+    height: 70%;
+    position: absolute;
+    left: 1rem;
+}
+#textsuc{
+    text-align: center;
+ 
+}
 
+#clickable{
+    height: 5rem;
+    position: absolute;
+    width: 4rem;
+    right: 0rem;
+}
+#cross{
+    height: 30%;
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+}
 form label{
     font-size: 2rem;
     margin: 3rem 0;

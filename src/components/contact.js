@@ -5,12 +5,16 @@ export const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [msg, setMsg] = useState("");
+    const [done, setDone] = useState(false)
 
     function onSubmit(e) {
+
+
         e.preventDefault();
         setName("");
         setEmail("");
         setMsg("");
+        setDone(true)
     }
 
     return (
@@ -34,6 +38,18 @@ export const Contact = () => {
                     <input type="submit" value="Submit" id="submitform" className="btn btn-primary" />
                 </form>
             </div>
-        </div>
+            {done ?
+                <div id="success">
+                    <img src="https://image.flaticon.com/icons/png/512/190/190411.png" alt="" id="tick" />
+                    <h3 id="textsuc">Submitted successfully!</h3>
+                    <div id="clickable" onClick={() => setDone(false)}>
+                        <img src="https://image.flaticon.com/icons/png/512/748/748122.png" alt="" id="cross" />
+                    </div>
+                </div>
+                :
+                null
+            }
+
+        </div >
     )
 }
