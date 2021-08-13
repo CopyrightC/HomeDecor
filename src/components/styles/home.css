@@ -9,7 +9,7 @@ footer{
     right: 0.9rem;
     height: 10rem;
     margin-top: 10rem;
-    background-color: rgb(65, 61, 61);
+    background-color: rgb(26, 24, 24);
 }
 
 #header2{
@@ -72,7 +72,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right, #1565C0, #b92b27);
+    background-image: linear-gradient(80deg, #1565C0, #b92b27);
 }
 .home-div #rev{
     margin-top: 10rem;

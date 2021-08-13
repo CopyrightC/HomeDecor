@@ -14,6 +14,9 @@ export const Shop = (props) => {
             <Detail name={name} img={img} />
             :
             <div className="main">
+                <div className="carttitle">
+                    <p className="p header">Shop</p>
+                </div>
                 <Furniture img="https://images-na.ssl-images-amazon.com/images/I/81K8cuT1QDL._AC_SL1500_.jpg"
                     name="Bookshelf"
                     price="$79.99"

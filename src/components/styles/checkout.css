@@ -30,7 +30,8 @@
     width: 40rem;
     height: 5rem;
     border-radius: 0.5rem;
-    border:none;
+    outline: 0;
+    border-width: 0 0 2px;
     text-align: center;
     display: flex;
     position: relative;

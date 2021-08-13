@@ -13,7 +13,7 @@ export const Cart = (props) => {
                 < div className="parent" >
                     <div className="cart-page">
                         <div className="carttitle">
-                            <p className="p" id="header">Cart</p>
+                            <p className="p header">Cart</p>
                         </div>
                         {dict.map((elem) => {
                             return <CartItemx name={elem.Name} key={elem.index} price={elem.Price}

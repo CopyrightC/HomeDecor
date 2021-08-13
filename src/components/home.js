@@ -3,6 +3,7 @@ import "./styles/home.css"
 import { Deal } from "./deal"
 import { Reviews } from "./reviews"
 import bg from "./bg.jpg"
+import { Link } from 'react-router-dom'
 export const Home = () => {
     return (
         <div className="homepar">
@@ -11,9 +12,9 @@ export const Home = () => {
                     <h2 >HomeDecor</h2>
                 </div>
                 <h1 id="slog">Buy the best for your home!</h1>
-                <a href="/shop">
+                <Link to="/shop">
                     <button className="btn btn-primary" id="shopnow">Shop now!</button>
-                </a>
+                </Link>
             </div>
             <div className="home-div">
                 <p className="p">Today's top deals</p>
