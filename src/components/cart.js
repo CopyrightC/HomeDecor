@@ -3,11 +3,17 @@ import "./styles/cart.css"
 import { CartItemx } from './cart-item';
 
 
-export const Cart = (props) => {
 
-    let dict = JSON.parse(localStorage.getItem("cart"));
+export const Cart = (props) => {
+    console.log(props.cart)
+    const deleteItem = (item) => {
+        props.setCart(props.cart.filter((x) => {
+            return JSON.stringify(x) !== JSON.stringify(item)
+        }))
+    }
+
     try {
-        if (dict.length !== 0) {
+        if (props.cart.length !== 0) {
             return (
 
                 < div className="parent" >
@@ -15,9 +21,9 @@ export const Cart = (props) => {
                         <div className="carttitle">
                             <p className="p header">Cart</p>
                         </div>
-                        {dict.map((elem) => {
+                        {props.cart.map((elem) => {
                             return <CartItemx name={elem.Name} key={elem.index} price={elem.Price}
-                                img={elem.Img} index={elem} del={props.del} obj={elem} />
+                                img={elem.Img} index={elem} del={deleteItem} obj={elem} />
                         })}
                     </div>
                     <a href="/checkout">

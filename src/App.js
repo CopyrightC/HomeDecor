@@ -12,18 +12,17 @@ import {
 
 function App() {
   let initJson;
-  if (localStorage.getItem("cart") === (null || "[]" || undefined)) {
+  let lcl = localStorage.getItem("cart");
+  if (lcl === (null || "[]" || undefined || "null")) {
     initJson = []
+    console.log("If block executed.")
   }
   else {
+
     initJson = JSON.parse(localStorage.getItem("cart"))
   }
 
-  const deleteItem = (item) => {
-    setCart(cart.filter((x) => {
-      return JSON.stringify(x) !== JSON.stringify(item)
-    }))
-  }
+
 
   const addItemToCart = (name, price, img) => {
     // console.log(name, price, img)
@@ -48,7 +47,7 @@ function App() {
   const [cart, setCart] = React.useState(initJson)
 
   React.useEffect(() => {
-    console.log("effect")
+    console.log("cool")
     localStorage.setItem("cart", JSON.stringify(cart))
   }, [cart])
 
@@ -69,7 +68,7 @@ function App() {
           </div>
         </Route>
         <Route exact path="/cart">
-          <Cart del={deleteItem} />
+          <Cart cart={cart} setCart={setCart} />
         </Route>
         <Route exact path="/checkout">
           <Checkout />

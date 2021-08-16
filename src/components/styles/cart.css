@@ -9,6 +9,20 @@
     z-index: 1;
     overflow: hidden;
 }
+.input{
+    width: 40rem;
+    height: 5rem;
+    border-color: black;
+    border-radius: 0.4rem;
+    outline: 0;
+    border-width: 0 0 2px;
+    text-align: center;
+    display: flex;
+    position: relative;
+    resize: none;
+    font-size: 1.5rem;
+}
+
 #empty::before{
     content: "";
     position: absolute;
