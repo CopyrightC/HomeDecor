@@ -46,6 +46,7 @@ export const Cart = (props) => {
                 </div >)
         }
     }
+
     catch {
         return (
             < div className="parent" >

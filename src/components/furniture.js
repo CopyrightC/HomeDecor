@@ -5,10 +5,10 @@ export const Furniture = (props) => {
     let ifClicked = false;
     return (
         <div className="furniture" onClick={() => {
-            console.log("dvi")
             if (!ifClicked) {
                 props.nameFunc(props.name)
                 props.imgFunc(props.img)
+                props.priceFunc(props.price)
                 props.xyz(true)
             }
         }}>

@@ -2,18 +2,34 @@
     width: 30vw;
     height: 40vh;
     margin: 0.5rem;
+    position: relative;
+    right: 0.5rem;
 }
 
 .content{
-    padding:  0 2rem;
+    padding:  3rem 2rem;
+    height: 60rem;
     display: flex;
+    position: relative;
     justify-content: center;
 }
+
+.desc{
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    background-color: rgb(208, 206, 212);
+}
+
 .cart{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.imgbg{
+    background-image: url(https://images.unsplash.com/photo-1518112166137-85f9979a43aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+
 }
 .margin{
     margin-bottom: 5rem;
@@ -34,9 +50,10 @@
     width: 23rem;
     font-size: 1.7rem;
     border-radius: 0.5rem;
-    margin-bottom: 4rem;
+    bottom: 5rem;
+    right: 7rem;
     height: 5rem;
-    position: relative;
+    position: absolute;
     z-index: 1;
     overflow-x: hidden;
 }
