@@ -12,22 +12,30 @@ import { PageDoesntExists } from "./components/404"
 function App() {
   let initJson;
   let lcl = localStorage.getItem("cart");
-  if (lcl === (null || "[]" || undefined || "null")) {
+
+  if (lcl === null || lcl === "[]" || lcl === [] || lcl === null) {
     initJson = []
-    console.log("If block executed.")
+    console.log("If block executed")
   }
   else {
-
+    console.log(typeof (lcl))
     initJson = JSON.parse(localStorage.getItem("cart"))
   }
 
+  const [cart, setCart] = React.useState(initJson)
+
   const addItemToCart = (name, price, img) => {
     let index;
-    if (cart.length === 0) {
-      index = 0;
+    try {
+      if (cart.length === 0) {
+        index = 0;
+      }
+      else {
+        index = cart[cart.length - 1].index + 1;
+      }
     }
-    else {
-      index = cart[cart.length - 1].index + 1;
+    catch {
+      console.log("catch", cart)
     }
 
     const detail = {
@@ -40,10 +48,8 @@ function App() {
     setCart([...cart, detail])
   }
 
-  const [cart, setCart] = React.useState(initJson)
 
   React.useEffect(() => {
-    console.log("cool")
     localStorage.setItem("cart", JSON.stringify(cart))
   }, [cart])
 
