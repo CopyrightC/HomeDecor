@@ -22,7 +22,6 @@ function App() {
   }
 
   const addItemToCart = (name, price, img) => {
-    // console.log(name, price, img)
     let index;
     if (cart.length === 0) {
       index = 0;
@@ -68,7 +67,7 @@ function App() {
           <Cart cart={cart} setCart={setCart} />
         </Route>
         <Route exact path="/checkout">
-          <Checkout />
+          <Checkout setCart={setCart} />
         </Route>
         <Route exact path="/contact">
           <Contact />

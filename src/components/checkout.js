@@ -10,19 +10,7 @@ const getAmount = () => {
     return price;
 }
 
-const PayementSuccess = () => {
-    return (
-        <div className="paid">
-            <div className="cont">
-                Paid ${getAmount()} successfully !
-                <br />
-                Your order is on the way :)
-            </div>
-        </div>
-    )
-}
-
-export const Checkout = () => {
+export const Checkout = (props) => {
     const [bool, setBool] = React.useState(false);
     const [title, setTitle] = React.useState("Pay via");
     const [paid, setPaid] = React.useState(false);
@@ -72,8 +60,16 @@ export const Checkout = () => {
     }
 
     else if (paid) {
+        let finalPrice = getAmount();
+        props.setCart(null)
         return (
-            <PayementSuccess />
+            <div className="paid">
+                <div className="cont">
+                    Paid ${finalPrice} successfully !
+                    <br />
+                    Your order is on the way :)
+                </div>
+            </div>
         )
     }
 
