@@ -1,6 +1,6 @@
 import React from 'react'
 import "./styles/checkout.css"
-
+import { Button } from '@material-ui/core';
 const getAmount = () => {
     let dict = JSON.parse(localStorage.getItem("cart"))
     let price = 0;
@@ -65,7 +65,7 @@ export const Checkout = () => {
                     <textarea className="input" type="text" placeholder="Mobile number" id="contactinp" />
                     <h2 className="h2">Address</h2>
                     <textarea className="input" type="text" id="add" placeholder="Address" />
-                    <button className="order btn btn-primary" onClick={() => { if (Onsumbit(false)) { setBool(true) } }}>Next step</button>
+                    <Button variant="contained" color="primary" id="checkbtn" onClick={() => { if (Onsumbit(false)) { setBool(true) } }}>Next step</Button>
                 </div>
             </div>
         )

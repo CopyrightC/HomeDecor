@@ -1,4 +1,7 @@
 import React from 'react'
+import { Button } from '@material-ui/core';
+import DeleteIcon from '@material-ui/icons/Delete';
+
 export const CartItemx = (props) => {
 
     return (
@@ -14,16 +17,18 @@ export const CartItemx = (props) => {
                     inventore ad id est at tenetur asperiores sed. Dolore accusantium, ipsum dolor
                     doloremque odio saepe at libero mollitia? Cupiditate?</p>
             </div>
-            <button className="btn btn-warning shop" onClick={() =>
-                props.del(props.obj)}>
-                Remove</button>
-        </div>
+            <div className="btn2">
+                <Button
+                    variant="contained"
+                    color="secondary"
+                    className="del"
+                    onClick={() => props.del(props.obj)}
+                    startIcon={<DeleteIcon />}
+                    style={{ fontSize: '1.6rem', color: "pink" }}
+                >
+                    Delete
+                </Button>
+            </div>
+        </div >
     )
 }
-
-/*
-onClick={() => {
-    if (!ifClicked) {
-        props.xyz(true)
-    }
-    */

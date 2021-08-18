@@ -2,8 +2,6 @@ import React from 'react'
 import "./styles/cart.css"
 import { CartItemx } from './cart-item';
 
-
-
 export const Cart = (props) => {
     console.log(props.cart)
     const deleteItem = (item) => {

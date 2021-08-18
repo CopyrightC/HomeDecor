@@ -1,5 +1,6 @@
 import React from 'react'
 import "./styles/furniture.css"
+import { Button } from '@material-ui/core';
 
 export const Furniture = (props) => {
     let ifClicked = false;
@@ -22,12 +23,17 @@ export const Furniture = (props) => {
                     inventore ad id est at tenetur asperiores sed. Dolore accusantium, ipsum dolor
                     doloremque odio saepe at libero mollitia? Cupiditate?</p>
             </div>
-
-            <button className="btn btn-primary shop" onClick={() => {
-                ifClicked = true;
-                alert("Added to cart!")
-                props.func(props.name, props.price, props.img)
-            }}>Add to cart</button>
+            <div className="btn2">
+                <Button variant="contained"
+                    color="primary"
+                    className="del"
+                    style={{ fontSize: '1.4rem' }}
+                    onClick={() => {
+                        ifClicked = true;
+                        alert("Added to cart!")
+                        props.func(props.name, props.price, props.img)
+                    }}>Add to cart</Button>
+            </div>
 
         </div >
     )

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./styles/contact.css"
+import { Button } from '@material-ui/core';
 
 export const Contact = () => {
     const [name, setName] = useState("");
@@ -35,7 +36,8 @@ export const Contact = () => {
                     <textarea type="text" value={email} onChange={(e) => setEmail(e.target.value)} className="forminp" />
                     <label htmlFor="msg">Message - </label>
                     <textarea type="text" value={msg} className="forminp" onChange={(e) => setMsg(e.target.value)} id="msginp" />
-                    <input type="submit" value="Submit" id="submitform" className="btn btn-primary" />
+                    <Button variant="contained"
+                        color="primary" type="submit" value="Submit" id="submitform" >Submit</Button>
                 </form>
             </div>
             {done ?
