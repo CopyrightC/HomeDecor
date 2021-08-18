@@ -2,7 +2,6 @@ import React from 'react'
 import "./styles/home.css"
 import { Deal } from "./deal"
 import { Reviews } from "./reviews"
-import bg from "./bg.jpg"
 import { Link } from 'react-router-dom'
 export const Home = () => {
     return (

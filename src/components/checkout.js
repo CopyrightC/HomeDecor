@@ -5,7 +5,7 @@ const getAmount = () => {
     let dict = JSON.parse(localStorage.getItem("cart"))
     let price = 0;
     dict.map((count) => {
-        price += parseFloat(count.Price.slice(1, count.Price.length - 1))
+        return price += parseFloat(count.Price.slice(1, count.Price.length - 1))
     })
     return price;
 }
@@ -44,7 +44,7 @@ export const Checkout = () => {
             catch { }
         }
         if (boolVal) {
-            if (title == "Pay via") {
+            if (title === "Pay via") {
                 alert("Please choose a payment option")
                 return false
             }
@@ -88,9 +88,9 @@ export const Checkout = () => {
                         {title}
                     </button>
                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a className="dropdown-item" href="#" onClick={() => setTitle("UPI")}>UPI</a></li>
-                        <li><a className="dropdown-item" href="#" onClick={() => setTitle("Cash")}>Cash</a></li>
-                        <li><a className="dropdown-item" href="#" onClick={() => setTitle("Debit/Credit card")}>Credit/Debit card</a></li>
+                        <li className="dropdown-item" href="" onClick={() => setTitle("UPI")}>UPI</li>
+                        <li className="dropdown-item" href="" onClick={() => setTitle("Cash")}>Cash</li>
+                        <li className="dropdown-item" href="" onClick={() => setTitle("Debit/Credit card")}>Credit/Debit card</li>
                     </ul>
                 </div>
                 <button className="order btn btn-primary" onClick={() => { if (Onsumbit(true)) { setPaid(true) } }}>Pay securely</button>
