@@ -33,7 +33,7 @@ export const Home = () => {
                     <Deal pic="https://i5.walmartimages.com/asr/c6901836-a66a-4534-97ff-8a69adc692b0_1.e0584f1e235b828ddf8a490e759a5001.jpeg"
                         cross="$350.88" price="$297.48" name="Canvas wall art" />
                     <Deal pic="https://images-na.ssl-images-amazon.com/images/I/41YViS9mhKL._AC_.jpg"
-                        cross="$252" price="$199" name="Two Frogs in a Boat Faberge Styled Trinket Box" />
+                        cross="$252" price="$199.76" name="Two Frogs in a Boat Faberge Styled Trinket Box" />
 
                 </div>
                 <p id="rev" className="p">Feedbacks</p>

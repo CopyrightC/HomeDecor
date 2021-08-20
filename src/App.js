@@ -13,12 +13,13 @@ function App() {
   let initJson;
   let lcl = localStorage.getItem("cart");
 
-  if (lcl === null || lcl === "[]" || lcl === [] || lcl === null) {
+  if (lcl === null || lcl === "[]" || lcl === [] || lcl === "null") {
     initJson = []
     console.log("If block executed")
   }
+
   else {
-    console.log(typeof (lcl))
+    console.log(typeof (lcl), lcl)
     initJson = JSON.parse(localStorage.getItem("cart"))
   }
 

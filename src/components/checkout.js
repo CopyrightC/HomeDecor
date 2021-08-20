@@ -1,20 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./styles/checkout.css"
 import { Button } from '@material-ui/core';
-const getAmount = () => {
-    let dict = JSON.parse(localStorage.getItem("cart"))
-    let price = 0;
-    dict.map((count) => {
-        return price += parseFloat(count.Price.slice(1, count.Price.length - 1))
-    })
-    return price;
-}
+
 
 export const Checkout = (props) => {
     const [bool, setBool] = React.useState(false);
     const [title, setTitle] = React.useState("Pay via");
     const [paid, setPaid] = React.useState(false);
 
+    const getAmount = () => {
+        let dict = JSON.parse(localStorage.getItem("cart"))
+        let price = 0;
+        dict.map((count) => {
+            return price += parseFloat(count.Price.slice(1, count.Price.length - 1))
+        })
+        return price;
+    }
     const Onsumbit = (boolVal) => {
         if (!boolVal) {
             try {
