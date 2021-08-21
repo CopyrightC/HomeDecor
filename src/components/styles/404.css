@@ -1,3 +1,16 @@
 #error{
-    
+    background-image: url(https://www.cdgi.com/wp-content/uploads/2019/05/404-Pages.jpg);
+    width: 100vw;
+    height: 93.8vh;
+    background-position: center;
+    justify-content: center;
+    background-size: cover;
+    display: flex;
+}
+.errormsg{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    align-self: center;
+    position: relative;
+    top: 10rem;
 }
