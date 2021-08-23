@@ -12,6 +12,7 @@
     justify-content: center;
     display: flex;
     width: 100vw;
+    flex-direction: row;
     height: 100vh;
     font-family: 'Shadows Into Light', cursive;
     font-size: 3rem;

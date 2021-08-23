@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import "./styles/checkout.css"
 import { Button } from '@material-ui/core';
 
@@ -79,7 +79,7 @@ export const Checkout = (props) => {
             <p className="p">Checkout</p>
 
             <div className="contact">
-                <p className="enlarge">Subtotal - $1000</p>
+                <p className="enlarge">Subtotal - ${getAmount()}</p>
                 <div className="dropdown">
                     <button className="drop btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         {title}

@@ -13,6 +13,11 @@ html{
   flex-direction: column;
 }
 
+.link, .link:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
 .p{
   font-family: 'Shadows Into Light', cursive;
   display: flex;

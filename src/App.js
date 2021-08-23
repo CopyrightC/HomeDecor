@@ -8,6 +8,7 @@ import { Contact } from "./components/contact";
 import { Checkout } from "./components/checkout"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { PageDoesntExists } from "./components/404"
+import { Detail } from "./components/detail";
 
 function App() {
   let initJson;
@@ -78,6 +79,9 @@ function App() {
         </Route>
         <Route exact path="/contact">
           <Contact />
+        </Route>
+        <Route path="/details">
+          <Detail />
         </Route>
         <Route component={PageDoesntExists} />
       </Switch>
