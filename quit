@@ -1,0 +1,203 @@
+[33mcommit 60abb0594c705d9091cc4d33a009d60b62579bfc[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Mon Aug 23 20:51:30 2021 +0530
+
+    Deatils page final version
+
+[33mcommit 6a553f2ffbdd25fb85282acbff314fdcdfc16cd5[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Sat Aug 21 17:38:21 2021 +0530
+
+    Added 404 page
+
+[33mcommit 661b13db02599488600f0721c7de8b41b2c5898b[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Fri Aug 20 20:29:41 2021 +0530
+
+    Made deal items functional
+
+[33mcommit 2ab56daa165c4e2c7321014620810d09b4ff5781[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Wed Aug 18 21:01:37 2021 +0530
+
+    Fixed lcl.clear() bug
+
+[33mcommit 378ed2a9efe12551dafe9877c35bb775454284f5[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Wed Aug 18 18:43:22 2021 +0530
+
+    Cart reset after payement
+
+[33mcommit bf28e8619ef7668cbec4d4b2c9066faa40ceb673[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Wed Aug 18 16:02:26 2021 +0530
+
+    Resolved warnings
+
+[33mcommit e9da0e8aa2400b750fc38edbbc277ed288960a88[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Wed Aug 18 14:14:18 2021 +0530
+
+    material-ui btns added
+
+[33mcommit a3780c75606b27bdb8789a7558d13a628f59701e[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Tue Aug 17 21:09:50 2021 +0530
+
+    Styled detail.js + added functionality
+
+[33mcommit db17c60fe72ebc1c2d68bb926635754abc4babee[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Mon Aug 16 20:29:54 2021 +0530
+
+    Cart/localstr bug fixed
+
+[33mcommit fa3a23705055cc5386bda3e0d858dbf59109afa9[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Fri Aug 13 20:11:19 2021 +0530
+
+    Contact.js finished
+
+[33mcommit d019cdda7dc4d2fa83c375ceeb2d782e69761267[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Fri Aug 13 20:10:20 2021 +0530
+
+    Contact.js finshed
+
+[33mcommit b53cff64efef1846cb78a2d389c5243585d41cbe[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Fri Aug 13 18:28:05 2021 +0530
+
+    Contact page design finished
+
+[33mcommit 26ea63e9acc8cb58970a519c9dfce9f35dec88b7[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Thu Aug 12 20:14:20 2021 +0530
+
+    Cart redesigned
+
+[33mcommit 43bb1e7596fca7cade8c81761a3f243055c46bbe[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Thu Aug 12 18:58:10 2021 +0530
+
+    Styled home + added logic to checkout.js
+
+[33mcommit 9c7ae238b292fe5c1eed23d12eb3b2cb011a7f5a[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Wed Aug 11 18:35:52 2021 +0530
+
+    Payment page + navbar styled
+
+[33mcommit 6f124dfd8f53c23d0d507ddf2be48b32b8e5f86f[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Mon Aug 9 20:44:46 2021 +0530
+
+    Styled home
+
+[33mcommit ce953e41c54eff529e8d6853c7dbb4634ff252ab[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Sat Aug 7 14:19:46 2021 +0530
+
+    Reviews.js fixed
+
+[33mcommit d60a00c73860b897396838dd4d500fe6a94c923c[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Fri Aug 6 19:42:22 2021 +0530
+
+    Nav + checkout frontend done
+
+[33mcommit 9a2455587b18d3405f74a046033bf5bd0843f10d[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Fri Aug 6 09:08:46 2021 +0530
+
+    Cart functioning
+
+[33mcommit 23c3f3e936ac582483123d1f19612e9fe6e5f963[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Thu Aug 5 20:14:16 2021 +0530
+
+    Localstorage bug fixed
+
+[33mcommit 38f483261a3cf812623284e3adb4cc8c9e6d098c[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Tue Aug 3 20:58:51 2021 +0530
+
+    Fixed obj struct bug
+
+[33mcommit 5b989dc077261b0eb8aa77cdb6fed06e2b8ab937[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Sun Aug 1 12:31:06 2021 +0530
+
+    Cart page ready
+
+[33mcommit ca2db625c24bbbd23875eb11d9dc716c6bf27aec[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Sat Jul 31 17:17:29 2021 +0530
+
+    Fixed localstorage bug
+
+[33mcommit 5ed926a8cf765dba4e3f2dbbe727aebcee381c61[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Thu Jul 29 21:04:11 2021 +0530
+
+    Localstorge done
+
+[33mcommit 13b870de0de9ecd21561be80077e29ba1164aacc[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Thu Jul 29 12:57:53 2021 +0530
+
+    updated readme.md
+
+[33mcommit 2b7b1cc9dc9b316533fbe88cbec6ea6b8620233d[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Thu Jul 29 11:42:39 2021 +0530
+
+    C:/Program Files/Git/desc working
+
+[33mcommit 60affaf097e2a80befb10e85b6962d8223212eb8[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Wed Jul 28 16:17:09 2021 +0530
+
+    home page ready
+
+[33mcommit b2ab2d18ba7c9cdb77a830e0b958f593124c5dfe[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Mon Jul 26 21:01:58 2021 +0530
+
+    Home page design ready
+
+[33mcommit c35a0e457af0529b5e9400c5458078c314ae53dc[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Mon Jul 26 20:39:36 2021 +0530
+
+    Home page design ready
+
+[33mcommit 7c8e84c000b455bab89a90cdb9d8472b66af9b35[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Sat Jul 24 21:04:30 2021 +0530
+
+    desktop nav ready
+
+[33mcommit 6b3ca1d57ffc190c402eadeb57a7c65c8e3e4571[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Sat Jul 24 17:45:14 2021 +0530
+
+    basic shop ready
+
+[33mcommit 0c59732860c9b46f35392fb66d23bf40b29d5ac8[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Sat Jul 24 17:20:26 2021 +0530
+
+    Redesigned furniture.js
+
+[33mcommit 61e2e2a21d8a9f87cdd4c7cd1b7afc0ac95111c3[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Fri Jul 23 21:20:10 2021 +0530
+
+    Basic shop.js ready
+
+[33mcommit b83ec32321055bde3423e370a73d91f83325a5fd[m
+Author: Shourya <shouryasinha001@gmail.com>
+Date:   Fri Jul 23 19:58:49 2021 +0530
+
+    Initialize project using Create React App
