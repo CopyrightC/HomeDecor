@@ -29,37 +29,44 @@ export const Detail = (props) => {
         window.scrollTo(0, 0)
     }, [])
 
+    /*
+    name - itemDetails[keyList[x]]["dis"]
+    img - itemDetails[keyList[x]]["img"]
+    price - itemDetails[keyList[x]]["price"]
+    */
+
+
     let path = window.location.pathname.split("/")[2]
     let keyList = Object.keys(itemDetails)
 
-    if ((Object.keys(props).length === 0)) {
-        for (let x = 0; x < keyList.length; ++x) {
-            if (path === keyList[x].toLowerCase()) {
-                console.log(path)
-                return (
-                    <div className="imgbg">
-                        <div className="cart">
-                            <p className="p">About item</p>
-                            <div className="content">
-                                <img src={itemDetails[keyList[x]]["img"]} alt="" />
-                                <div className="desc">
-                                    <h3 id="ok">{itemDetails[keyList[x]]["dis"]}</h3>
-                                    <p id="paradesc">Lorem ipsum dolor sit amet consectetur, dis voluptates magnam nihil aliquid quas, minus modi temporibus a tempore repellat, illum optio saepe praesentium quos odit deserunt fugiat voluptatibus odio est dignissimos ullam, repudiandae omnis. Porro quisquam aliquam magnam, minima deleniti natus libero voluptate fugit magni a ipsum voluptatibus qui reiciendis molestias. Tempora qui culpa sint reiciendis! Sapiente amet ex, eaque dolores architecto laudantium necessitatibus beatae nobis acccusamus maxime voluptate facere maiores similique optio sequi saepe earum quasi placeat expedita esse temporibus cupiditate voluptas magni dolor! Nemo laborum, iste suscipit, nesciunt eos voluptatibus dignissimos adipisci in, ipsum maiores hic aspernatur corrupti impedit pariatur eligendi facere quidem tenetur! Quaerat laboriosam id sed, quidem obcaecati, dolor sunt veniam facilis minus labore nihil in rerum voluptas itaque architecto officia quos distinctio ex ipsa deserunt necessitatibus harum nulla quis. Quod ex error, odit quasi ab officia libero, voluptatibus ratione maxime nobis accusantium! Harum illo commodi unde porro, nostrum magnam est in neque nesciunt alias iusto laudantium consequuntur quaerat, quos necessitatibus voluptatum sed officia nisi fuga consequatur. Perspiciatis nihil facilis nisi quod suscipit dignissimos explicabo quos debitis. Quaerat ipsam alias dolorum aliquid amet cumque deserunt quae ullam? Nisi ducimus laboriosam laborum nemo laudantium?</p>
-                                    <Button variant="contained" color="primary" id="Add-to-cart">
-                                        Add to cart
-                                    </Button>
-                                    <h3 id="price">{itemDetails[keyList[x]]["price"]}</h3>
-                                </div>
+    for (let x = 0; x < keyList.length; ++x) {
+        if (path === keyList[x].toLowerCase()) {
+            console.log(path)
+            return (
+                <div className="imgbg">
+                    <div className="cart">
+                        <p className="p">About item</p>
+                        <div className="content">
+                            <img src={itemDetails[keyList[x]]["img"]} alt="" />
+                            <div className="desc">
+                                <h3 id="ok">{itemDetails[keyList[x]]["dis"]}</h3>
+                                <p id="paradesc">Lorem ipsum dolor sit amet consectetur, dis voluptates magnam nihil aliquid quas, minus modi temporibus a tempore repellat, illum optio saepe praesentium quos odit deserunt fugiat voluptatibus odio est dignissimos ullam, repudiandae omnis. Porro quisquam aliquam magnam, minima deleniti natus libero voluptate fugit magni a ipsum voluptatibus qui reiciendis molestias. Tempora qui culpa sint reiciendis! Sapiente amet ex, eaque dolores architecto laudantium necessitatibus beatae nobis acccusamus maxime voluptate facere maiores similique optio sequi saepe earum quasi placeat expedita esse temporibus cupiditate voluptas magni dolor! Nemo laborum, iste suscipit, nesciunt eos voluptatibus dignissimos adipisci in, ipsum maiores hic aspernatur corrupti impedit pariatur eligendi facere quidem tenetur! Quaerat laboriosam id sed, quidem obcaecati, dolor sunt veniam facilis minus labore nihil in rerum voluptas itaque architecto officia quos distinctio ex ipsa deserunt necessitatibus harum nulla quis. Quod ex error, odit quasi ab officia libero, voluptatibus ratione maxime nobis accusantium! Harum illo commodi unde porro, nostrum magnam est in neque nesciunt alias iusto laudantium consequuntur quaerat, quos necessitatibus voluptatum sed officia nisi fuga consequatur. Perspiciatis nihil facilis nisi quod suscipit dignissimos explicabo quos debitis. Quaerat ipsam alias dolorum aliquid amet cumque deserunt quae ullam? Nisi ducimus laboriosam laborum nemo laudantium?</p>
+                                <Button variant="contained" color="primary" id="Add-to-cart" onClick={() =>
+                                    props.add(itemDetails[keyList[x]]["dis"], itemDetails[keyList[x]]["price"], itemDetails[keyList[x]]["img"])
+                                }>
+                                    Add to cart
+                                </Button>
+                                <h3 id="price">{itemDetails[keyList[x]]["price"]}</h3>
+                            </div>
 
-                            </div>
-                            <p className="p">Customer Reviews</p>
-                            <div className="margin">
-                                <Reviews />
-                            </div>
                         </div>
-                    </div >
-                )
-            }
+                        <p className="p">Customer Reviews</p>
+                        <div className="margin">
+                            <Reviews />
+                        </div>
+                    </div>
+                </div >
+            )
         }
     }
 

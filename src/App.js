@@ -35,6 +35,7 @@ function App() {
       else {
         index = cart[cart.length - 1].index + 1;
       }
+      alert("Added to cart!")
     }
     catch {
       console.log("catch", cart)
@@ -81,7 +82,7 @@ function App() {
           <Contact />
         </Route>
         <Route path="/details">
-          <Detail />
+          <Detail add={addItemToCart} />
         </Route>
         <Route component={PageDoesntExists} />
       </Switch>

@@ -9,13 +9,17 @@ export const Contact = () => {
     const [done, setDone] = useState(false)
 
     function onSubmit(e) {
-
-
         e.preventDefault();
-        setName("");
-        setEmail("");
-        setMsg("");
-        setDone(true)
+        if ((name !== "") && (email !== "") && (msg !== "")) {
+            setName("");
+            setEmail("");
+            setMsg("");
+            setDone(true)
+        }
+
+        else {
+            alert("Please fill all the fields")
+        }
     }
 
     return (

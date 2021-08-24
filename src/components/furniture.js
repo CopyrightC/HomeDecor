@@ -25,7 +25,6 @@ export const Furniture = (props) => {
                             style={{ fontSize: '1.4rem' }}
                             onClick={(e) => {
                                 e.preventDefault()
-                                alert("Added to cart!")
                                 props.func(props.name, props.price, props.img)
                             }}>Add to cart</Button>
                     </div>
