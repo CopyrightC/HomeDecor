@@ -3,7 +3,7 @@ import "./styles/cart.css"
 import { CartItemx } from './cart-item';
 import { Link } from 'react-router-dom';
 export const Cart = (props) => {
-    console.log(props.cart)
+
     const deleteItem = (item) => {
         props.setCart(props.cart.filter((x) => {
             return JSON.stringify(x) !== JSON.stringify(item)

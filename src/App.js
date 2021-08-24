@@ -11,6 +11,7 @@ import { PageDoesntExists } from "./components/404"
 import { Detail } from "./components/detail";
 
 function App() {
+
   let initJson;
   let lcl = localStorage.getItem("cart");
 
@@ -19,7 +20,6 @@ function App() {
   }
 
   else {
-    console.log(typeof (lcl), lcl)
     initJson = JSON.parse(localStorage.getItem("cart"))
   }
 
@@ -47,6 +47,7 @@ function App() {
 
     setCart([...cart, detail])
   }
+
 
 
   React.useEffect(() => {

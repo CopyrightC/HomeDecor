@@ -1,7 +1,7 @@
 import React from 'react'
 import "./styles/checkout.css"
 import { Button } from '@material-ui/core';
-
+import { Paid } from './paid';
 
 export const Checkout = (props) => {
     const [bool, setBool] = React.useState(false);
@@ -61,17 +61,7 @@ export const Checkout = (props) => {
     }
 
     else if (paid) {
-        let finalPrice = getAmount();
-        props.setCart(null)
-        return (
-            <div className="paid">
-                <div className="cont">
-                    Paid ${finalPrice} successfully !
-                    <br />
-                    Your order is on the way :)
-                </div>
-            </div>
-        )
+        return <Paid setCart={props.setCart} />
     }
 
     return (
