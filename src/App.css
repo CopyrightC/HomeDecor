@@ -38,9 +38,29 @@ html{
   justify-content: space-around;
 }
 
+                                    /* media queries  */
+
+
 
 @media (max-width:800px){
   html{
     font-size: 50%;
   }
+}
+
+@media (max-width:600px){
+  html{font-size: 33%;}
+}
+@media (max-width:500px){
+  html{font-size: 27%;}
+}
+@media (max-width:410px){
+  html{font-size: 25.3%;}
+}
+@media (max-width:380px){
+  html{font-size: 24%;}
+}
+
+@media (max-width:330px){
+  html{font-size: 21%;}
 }
