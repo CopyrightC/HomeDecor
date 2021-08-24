@@ -41,7 +41,6 @@ export const Detail = (props) => {
 
     for (let x = 0; x < keyList.length; ++x) {
         if (path === keyList[x].toLowerCase()) {
-            console.log(path)
             return (
                 <div className="imgbg">
                     <div className="cart">

@@ -16,7 +16,6 @@ function App() {
 
   if (lcl === null || lcl === "[]" || lcl === [] || lcl === "null") {
     initJson = []
-    console.log("If block executed")
   }
 
   else {
@@ -37,9 +36,7 @@ function App() {
       }
       alert("Added to cart!")
     }
-    catch {
-      console.log("catch", cart)
-    }
+    catch { }
 
     const detail = {
       index: index,

@@ -23,9 +23,6 @@ export const Home = () => {
                         cross="$25" price="$15" name="Purple Artificial Fern Grass Plant with Pot" keyName="pot" />
                     <Deal pic="https://images-na.ssl-images-amazon.com/images/I/81vIiMXn68L._AC_SL1500_.jpg"
                         cross="$468.26" price="$376.25" name="Abstract Big Penh Flower Oil Painting" keyName="painting" />
-                    {
-                        console.log("ok")
-                    }
                 </div>
 
                 <div className="row">

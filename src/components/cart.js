@@ -1,7 +1,7 @@
 import React from 'react'
 import "./styles/cart.css"
 import { CartItemx } from './cart-item';
-
+import { Link } from 'react-router-dom';
 export const Cart = (props) => {
     console.log(props.cart)
     const deleteItem = (item) => {
@@ -24,9 +24,9 @@ export const Cart = (props) => {
                                 img={elem.Img} index={elem} del={deleteItem} obj={elem} />
                         })}
                     </div>
-                    <a href="/checkout">
+                    <Link to="/checkout">
                         <button className="btn btn-primary" id="proceed">Proceed to checkout</button>
-                    </a>
+                    </Link>
                 </div >
 
             )
