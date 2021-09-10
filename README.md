@@ -5,9 +5,6 @@
 
 <p align="center"> HomeDecor is an ecommerce website made in reactjs </p> 
 
-
-
-
 ![final_6125146d65321601218bf7ab_935617](https://user-images.githubusercontent.com/68592417/130648590-32fc89fb-52f1-4341-89b1-c1fdbc743f7c.gif)
 
 
